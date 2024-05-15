@@ -25,6 +25,8 @@ public class RegisterUser {
                 JOptionPane.showMessageDialog(null, "User registered successfully.");
             } else {
                 JOptionPane.showMessageDialog(null, "Username already exists.");
+                //dadadawdw
+                JOptionPane.showMessageDialog(null, "Username already exists.");
             }
         }
     }
