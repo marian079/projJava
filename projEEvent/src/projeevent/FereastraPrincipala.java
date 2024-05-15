@@ -50,5 +50,6 @@ public class FereastraPrincipala extends JFrame{
         f.setSize(500, 75);
         f.setVisible(true);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //should i stay or should i go now trntntntntntntn
     }
 }
