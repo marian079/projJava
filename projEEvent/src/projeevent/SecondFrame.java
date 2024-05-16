@@ -15,11 +15,11 @@ public class SecondFrame extends JFrame {
     private AuthenticationService authService;
 
     public SecondFrame(AuthenticationService authService) {
-        super("Main Menu");
+        super("Meniul Principal");
         this.authService = authService;
         setLayout(new GridLayout(3, 1));
 
-        JButton categoriesButton = new JButton("Categories");
+        JButton categoriesButton = new JButton("Categorii");
         categoriesButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -28,22 +28,22 @@ public class SecondFrame extends JFrame {
         });
         add(categoriesButton);
 
-        JButton myEventsButton = new JButton("My Events");
+        JButton myEventsButton = new JButton("Evenimente la care particip");
         myEventsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Show My Events frame
-                JOptionPane.showMessageDialog(null, "No events to display.");
+                JOptionPane.showMessageDialog(null, "Nu aveți evenimente adăugate!");
             }
         });
         add(myEventsButton);
 
-        JButton interestingEventsButton = new JButton("Interesting Events");
+        JButton interestingEventsButton = new JButton("Evenimente favorite");
         interestingEventsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Show Interesting Events frame
-                JOptionPane.showMessageDialog(null, "No events to display.");
+                JOptionPane.showMessageDialog(null, "Nu aveți evenimente adăugate!");
             }
         });
         add(interestingEventsButton);

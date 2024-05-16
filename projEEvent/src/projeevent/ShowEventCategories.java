@@ -10,10 +10,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class ShowEventCategories {
-    private String[] categories = {"muzica", "inaugurari", "lansare de carte", "sportiv", "expozitii de arta", "serbare", "teatru"};
+    private String[] categories = {"Muzică", "Inaugurări", "Lansare de Carte", "Sport", "Expoziții de Artă", "Teatru", "Festival", "Film", "Muzică"};
 
     public void showEventCategories() {
-        JFrame categoryFrame = new JFrame("Event Categories");
+        JFrame categoryFrame = new JFrame("Evenimente");
         categoryFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         categoryFrame.setLayout(new GridLayout(categories.length, 1));
 
@@ -23,7 +23,7 @@ public class ShowEventCategories {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     // Handle category button click
-                    JOptionPane.showMessageDialog(null, "No events in category: " + category);
+                    JOptionPane.showMessageDialog(null, "Nu sunt adăugate evenimente în această categorie!");
                 }
             });
             categoryFrame.add(categoryButton);

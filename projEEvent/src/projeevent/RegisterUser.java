@@ -14,7 +14,7 @@ public class RegisterUser {
         JPasswordField passwordField = new JPasswordField();
         Object[] message = {
             "Username:", usernameField,
-            "Password:", passwordField
+            "Parola:", passwordField
         };
 
         int option = JOptionPane.showConfirmDialog(null, message, "Register", JOptionPane.OK_CANCEL_OPTION);
