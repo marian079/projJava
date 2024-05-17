@@ -27,6 +27,7 @@ public class LoginUser {
         if (option == JOptionPane.OK_OPTION) {
             String username = usernameField.getText();
             String password = new String(passwordField.getPassword());
+            
             if (authService.login(username, password)) {
                 JOptionPane.showMessageDialog(null, "Login successful.");
                 authFrame.setVisible(false); // Hide the authentication frame

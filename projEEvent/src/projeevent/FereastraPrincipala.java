@@ -48,8 +48,10 @@ public class FereastraPrincipala extends JFrame{
         AuthenticationService authService = new UserService();
         JFrame f = new FereastraPrincipala(authService);
         f.setSize(500, 75);
-        f.setVisible(true);
+        new SecondFrame(authService).setVisible(true);
+        //f.setVisible(true);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
         //should i stay or should i go now trntntntntntntn
     }
 }
