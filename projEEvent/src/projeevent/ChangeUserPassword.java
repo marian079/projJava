@@ -23,15 +23,15 @@ public class ChangeUserPassword {
             "New Password:", newPasswordField
         };
 
-        int option = JOptionPane.showConfirmDialog(null, message, "Change Password", JOptionPane.OK_CANCEL_OPTION);
+        int option = JOptionPane.showConfirmDialog(null, message, "Schimbă parola", JOptionPane.OK_CANCEL_OPTION);
         if (option == JOptionPane.OK_OPTION) {
             String username = usernameField.getText();
             String oldPassword = new String(oldPasswordField.getPassword());
             String newPassword = new String(newPasswordField.getPassword());
             if (authService.changePassword(username, oldPassword, newPassword)) {
-                JOptionPane.showMessageDialog(null, "Password changed successfully.");
+                JOptionPane.showMessageDialog(null, "Parola a fost schimbată cu succes!");
             } else {
-                JOptionPane.showMessageDialog(null, "Invalid username or old password.");
+                JOptionPane.showMessageDialog(null, "Username sau parolă invalide!");
             }
         }
     }
