@@ -28,11 +28,11 @@ public class LoginUser {
             String username = usernameField.getText();
             String password = new String(passwordField.getPassword());
             if (authService.login(username, password)) {
-                JOptionPane.showMessageDialog(null, "Login successful.");
+                JOptionPane.showMessageDialog(null, "Logare cu succes!");
                 authFrame.setVisible(false); // Hide the authentication frame
                 new SecondFrame(authService).setVisible(true); // Show the main frame
             } else {
-                JOptionPane.showMessageDialog(null, "Invalid username or password.");
+                JOptionPane.showMessageDialog(null, "Username sau parolă invalide!");
             }
         }
     }

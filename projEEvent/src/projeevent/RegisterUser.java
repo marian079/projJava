@@ -17,14 +17,14 @@ public class RegisterUser {
             "Parola:", passwordField
         };
 
-        int option = JOptionPane.showConfirmDialog(null, message, "Register", JOptionPane.OK_CANCEL_OPTION);
+        int option = JOptionPane.showConfirmDialog(null, message, "Înregistrare", JOptionPane.OK_CANCEL_OPTION);
         if (option == JOptionPane.OK_OPTION) {
             String username = usernameField.getText();
             String password = new String(passwordField.getPassword());
             if (authService.register(username, password)) {
-                JOptionPane.showMessageDialog(null, "User registered successfully.");
+                JOptionPane.showMessageDialog(null, "Utilizatorul s-a inregistrat cu succes!");
             } else {
-                JOptionPane.showMessageDialog(null, "Username already exists.");
+                JOptionPane.showMessageDialog(null, "Username exista deja!");
          
             }
         }
